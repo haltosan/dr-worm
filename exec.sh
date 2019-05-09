@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#ssh root@[IP] 'bash -s' < [SCRIPT_NAME]
-
-#find connect to each vulnerable device
+#    ssh root@[IP] 'bash -s' < [SCRIPT_NAME]
 
 #Loop:
+
+#connect to the vulnerable device
 
 #generate a passwd
 
@@ -12,8 +12,10 @@
 
 #change password in loop
 
- #echo -e "[PASS\nPASS]" | passwd [USER]
+ #echo -e "$pass\n$pass" | passwd [USER]
 
-#log the password
+#log the password localy
+
+ #echo "$pass,[IP],[NAME]" >> log.[TIME]
 
 #End loop:
