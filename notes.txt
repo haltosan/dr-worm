@@ -1,16 +1,5 @@
-remove lines
-1-4
-
-remove prefix
-"Nmap scan report for "
-
-remove suffix
-not all the time there; [hostname (ip)]
-
-remove 2 lines following "Nmap scan report for"...
-
+[update: not used]
 ****pseudo code****
-
 red = the file read
 lines[] = each line
 remove first 4 lines
@@ -40,9 +29,14 @@ for i in lines:
 
 write $open to "open22" file
 
---------------------------------------------------
-pi ip
-137
+----------------------------------------------
+                                                 
+time of auto (with no yes/no)
+18.789s
+auto1 (no yes/no)
+10.531s
 
-localhost ip
-26
+auto (with yes/no)
+10.483s
+[auto1 can't work with yes/no]
+

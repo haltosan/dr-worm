@@ -1,0 +1,15 @@
+#!/usr/bin/expect -f
+set HOSTNAME [lindex $argv 0]
+set P1 [lindex $argv 1]
+set P2 [lindex $argv 2]
+set P3 [lindex $argv 3]
+spawn ssh $HOSTNAME
+expect "no)? "
+send "yes\r"
+expect "assword:"
+send "$P1\r"
+expect "assword:"
+send "$P2\r"
+expect "assword:"
+send "$P3\r" 
+interact

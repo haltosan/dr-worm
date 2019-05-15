@@ -4,4 +4,5 @@ echo "local ip is: " $lIp
 nmap -sn $lIp"/24" -oN liveIps
 echo "*********************************************************************************"
 cat liveIps
-#nmap -iL liveIps -p22 -oN sshOpen
+python ipCleanup.py
+nmap -iL ips -p22 -oN sshOpen -Pn

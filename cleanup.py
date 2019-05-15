@@ -3,7 +3,7 @@ task: get only the ipaddresses with 22 open in the text file
 output to hostList
 '''
 
-a.open("sshOpen","r")
+a=open("sshOpen","r")
 read=a.read()
 a.close()
 
