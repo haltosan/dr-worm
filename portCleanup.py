@@ -1,6 +1,6 @@
 #python
 
-a=open("sshOpen","r")
+a=open("lib/sshOpen","r")
 sshRaw=a.read()
 a.close()
 

