@@ -40,3 +40,8 @@ auto (with yes/no)
 10.483s
 [auto1 can't work with yes/no]
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3 stages left todo:
+ 1) cleanup hydra output
+ 2) generate passwords for the users
+ 3) change the user's passwords + log
