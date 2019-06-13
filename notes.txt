@@ -42,6 +42,6 @@ auto (with yes/no)
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 3 stages left todo:
- 1) cleanup hydra output
+ 1) cleanup hydra output [done]
  2) generate passwords for the users
  3) change the user's passwords + log
