@@ -1,4 +1,4 @@
 #!/bin/bash
 
-chmod +x auto auto1
+chmod +x login login1
 bash clear.sh

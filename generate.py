@@ -13,12 +13,12 @@ def gen():
 
 Lines=[]
 for i in lines:
-    i=i+" "+gen()
-    Lines.append(i)
+    if(i!=''):
+        i=i+" "+gen()
+        Lines.append(i)
 
-print(lines)
-
-'''
+#'''
 a=open("lib/creds","w")
-a.write(lines)
-'''
+a.write(Lines)
+a.close()
+#'''
